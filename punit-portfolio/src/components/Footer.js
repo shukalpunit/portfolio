@@ -1,26 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-const FooterWrapper = styled.footer`
-  background: ${({ theme }) => theme.background};
-  color: ${({ theme }) => theme.text};
-  text-align: center;
-  padding: 10px 0;
-
-  a {
-    color: ${({ theme }) => theme.primary};
-  }
-`;
-
-const Footer = () => {
+function Footer() {
   return (
-    <FooterWrapper>
-      <p>
-        <Link to="/">Back to Home</Link>
-      </p>
-    </FooterWrapper>
+    <footer style={{ textAlign: 'center', padding: '10px', backgroundColor: '#333333', color: '#F5F5F5' }}>
+      <a href="#home" style={{ color: '#FFC107', textDecoration: 'none' }}>Back to Home</a>
+    </footer>
   );
-};
+}
 
 export default Footer;
