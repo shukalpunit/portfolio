@@ -1,28 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Education from './pages/Education';
-import WorkExperience from './pages/WorkExperience';
-import Skills from './pages/Skills';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/work-experience" element={<WorkExperience />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+    <div className="App">
+      <Header />
+      <div id="about" style={{ height: '100vh', backgroundColor: '#F5F5F5' }}>
+        About Section
       </div>
-    </Router>
+      <div id="education" style={{ height: '100vh', backgroundColor: '#FFC107' }}>
+        Education Section
+      </div>
+      <div id="work-experience" style={{ height: '100vh', backgroundColor: '#0056D2', color: '#F5F5F5' }}>
+        Work Experience Section
+      </div>
+      <div id="skills" style={{ height: '100vh', backgroundColor: '#008080', color: '#F5F5F5' }}>
+        Skills Section
+      </div>
+      <div id="projects" style={{ height: '100vh', backgroundColor: '#333333', color: '#F5F5F5' }}>
+        Projects Section
+      </div>
+      <div id="contact" style={{ height: '100vh', backgroundColor: '#F5F5F5' }}>
+        Contact Section
+      </div>
+      <Footer />
+    </div>
   );
 }
 
