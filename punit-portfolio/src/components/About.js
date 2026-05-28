@@ -5,6 +5,7 @@ function About() {
     <section id="about" style={styles.section}>
       <h2 style={styles.heading}>About Me</h2>
       <p>This is the About section, styled with the provided color palette.</p>
+      <h3>My Skills are to build software</h3>
     </section>
   );
 }
