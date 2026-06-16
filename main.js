@@ -122,11 +122,11 @@ navLinks?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () =>
 // Typewriter
 const roles = [
   'Full-Stack Developer',
-  'AI Application Builder',
+  'SDE',
   'React & Python Engineer',
   'Stand User',
-  'Hackathon Winner',
-  'Game Dev Enthusiast',
+  'Hackathon Enthusiast',
+  'Game Developer',
 ];
 const typedEl = document.getElementById('typed');
 let ri = 0;
