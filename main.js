@@ -212,6 +212,30 @@ document.querySelectorAll('.tilt-card').forEach((card) => {
   });
 });
 
+// Experience / education switcher
+const expSection = document.getElementById('experience');
+const switchBtns = expSection?.querySelectorAll('.toggle-btn');
+const viewPanels = expSection?.querySelectorAll('.view-panel');
+
+function setExperienceView(view) {
+  if (!expSection) return;
+  expSection.dataset.view = view;
+  switchBtns?.forEach((btn) => {
+    const active = btn.dataset.view === view;
+    btn.classList.toggle('is-active', active);
+    btn.setAttribute('aria-pressed', String(active));
+  });
+  viewPanels?.forEach((panel) => {
+    const active = panel.dataset.panel === view;
+    panel.classList.toggle('is-active', active);
+  });
+}
+
+switchBtns?.forEach((btn) => {
+  btn.addEventListener('click', () => setExperienceView(btn.dataset.view || 'work'));
+});
+setExperienceView(expSection?.dataset.view || 'work');
+
 // Active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
 const navAs = document.querySelectorAll('.nav-links a');
