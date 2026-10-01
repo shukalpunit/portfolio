@@ -128,6 +128,19 @@ html[data-theme="sepia"] .reading-page { width: min(760px, calc(100% - 32px)); m
 .talk-detail > .eyebrow a { text-decoration: none; }
 .talk-detail-date { margin: -12px 0 22px; color: var(--faint); font-family: var(--sans); font-size: 12px; text-align: center; }
 .talk-detail-summary { margin: 0 0 20px; color: var(--muted); }
+.slide-frame { margin-bottom: 24px; }
+.talk-content { margin: 0 0 24px; color: var(--muted); }
+.talk-content:empty { display: none; }
+.talk-content h3 { margin: 28px 0 8px; color: var(--ink); font-size: 1.2rem; font-weight: 500; line-height: 1.4; }
+.talk-content p, .talk-content ul, .talk-content blockquote { margin: 0 0 14px; }
+.talk-content ul { padding-left: 22px; }
+.talk-content li + li { margin-top: 4px; }
+.talk-content blockquote { padding-left: 16px; border-left: 2px solid var(--rule); }
+.talk-content img { display: block; width: 100%; height: auto; margin: 18px 0; }
+.youtube-frame { width: 100%; aspect-ratio: 16 / 9; margin: 0 0 18px; background: var(--accent-wash); }
+.youtube-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.talk-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font-family: var(--sans); }
+.talk-tag { padding: 3px 8px; border: 1px solid var(--rule); border-radius: 3px; color: var(--muted); font-size: 11px; line-height: 1.5; }
 .slide-frame { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--rule); background: var(--accent-wash); }
 .slide-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
 .listing-entry h3 { margin: 0 0 5px; color: var(--ink); font-size: 1.12rem; font-weight: 500; line-height: 1.45; }
